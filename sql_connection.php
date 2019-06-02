@@ -1,3 +1,5 @@
+// establishing a connection with the sql server 
+
 <?php
 $host="localhost";
 $username="root";
