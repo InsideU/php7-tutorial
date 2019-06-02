@@ -9,8 +9,8 @@ $conn= new mysqli($host,$username,$password);
 //check the established connection
 
 if($conn->connect_error){
-	die("conncetion failed ". $conn->connect_error);
+	die("conncetion failed ". $conn->connect_error);  // if not established kill the connetion with the error message
 
 }
-echo "Connection established";
+echo "Connection established";   // if established display the message theat connection is established
 ?>
