@@ -12,17 +12,17 @@ if($conn->connect_error){
 	die("Connection Failed" . $conn->connect_error);
 
 }
-//create database
+//create database if the connection is established 
 else{
 	echo "conncetion established";
 
 }
-$sql="CREATE DATABASE akshat";
+$sql="CREATE DATABASE newDB"; //creating a database named newDB(sql command)
 if($conn->query($sql)===TRUE){
-	echo "Database created successfully";
+	echo "Database created successfully"; // echo if database created 
 }
 else{
-	echo "unable to create database";
+	echo "unable to create database"; // if not throw an error message
 }
 
 
