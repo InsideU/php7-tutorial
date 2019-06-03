@@ -1,7 +1,7 @@
 <?php
 $host="localhost";
 $user="root";
-$pass="XXXXXXXX";
+$pass="XXXXXXX";
 $db="newDB";
 
 $conn= new mysqli($host,$user,$pass,$db);
@@ -21,6 +21,6 @@ if ($result->num_rows > 0){		// if there is an entry then number of rows will al
 	echo " \r\n User Verified and Access Granted \r\n"; // if there is a row then there is an entry thus user verified
 }
 else{
-   echo	"\r\n Access Denied \r\n";
+	die("Denied Access");
 }
 ?>
